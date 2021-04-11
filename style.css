@@ -157,8 +157,8 @@ section.about {
     text-align: center;
 }
 
-.about-node::before,
-.about-node::after {
+.about-node:before,
+.about-node:after {
     content: "";
     width: 100%;
     height: 100px;
@@ -168,18 +168,18 @@ section.about {
     background-size: 100% 100%;
 }
 
-.about-grow::before {
+.about-grow:before {
     background-image: url("images/bg-section-top-mobile-1.svg");
 }
 
-.about-grow::after {
+.about-grow:after {
     background-image: url("images/bg-section-bottom-mobile-1.svg");
 }
 
-.about-users::before {
+.about-users:before {
     background-image: url("images/bg-section-top-mobile-2.svg");
 }
 
-.about-users::after {
+.about-users:after {
     background-image: url("images/bg-section-bottom-mobile-2.svg");
 }
