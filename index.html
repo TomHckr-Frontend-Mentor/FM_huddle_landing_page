@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,6 +13,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
   </style>
+  <script src="https://kit.fontawesome.com/faa1eedbf0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,14 +23,14 @@
     <button class="header-btn">Try it free</button>
   </header>
   <main>
-    <section class="intro content-section">
+    <section class="intro main-section">
       <h1 class="intro-title">Build The Community Your Fans Will Love</h1>
       <p class="intro-dscr">Huddle re-imagines the way we build communities. You have a voice, but so does 
   your audience. Create connections with your users as you engage in genuine discussion. </p>
       <button class="intro-btn">Get Started For Free</button>
       <img src="images/screen-mockups.svg" alt="" class="section-graphics starting-graphics">
     </section>
-    <section class="stats content-section">
+    <section class="stats main-section">
       <div class="stat">
         <img src="images/icon-communities.svg" alt="" class="stat-icon">
         <h2 class="stat-num">1.4k+</h1>
@@ -44,7 +42,7 @@
         <p class="stat-dscr">Messages Sent</p>
       </div>
     </section>
-    <section class="about content-section">
+    <section class="about main-section">
       <div class="about-grow about-node">
         <div class="about-node-inner">
           <img src="images/illustration-grow-together.svg" alt="" class="about-illustration">
@@ -70,28 +68,47 @@
         </div>
       </div>
     </section>
+    <section class="get-started main-section">
+      <h1 class="get-started-title">Ready To Build Your Community?</h1>
+      <button class="get-started-btn">Get Started For Free</button>
+    </section>
   </main>
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
-
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <section class="newsletter footer-section">
+      <h2 class="newsletter-heading">Newsletter</h2>
+      <p class="newsletter-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+        vestibulum a, ultrices quis sem.</p>
+      <form action="POST" class="newsletter-form">
+        <input type="email" name="email" id="email-field">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <section class="footer-section general">
+      <div class="general-text">
+        <img src="images/icon-messages.svg" alt="" class="general-logo">
+        <h1 class="general-title">Huddle</h1>
+        <p class="general-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.</p>
+      </div>
+      <div class="contacts">
+        <p class="contact">
+          <img src="images/icon-phone.svg" alt="" class="general-contacts-icon"> Phone: +1-543-123-4567
+        </p>
+        <p class="contact">
+          <img src="images/icon-email.svg" alt="" class="general-contacts-icon"> example@huddle.com
+        </p>
+      </div>
+      <div class="social">
+        <i class="social-icons fab-fa-facebook"></i>
+        <i class="social-icons fab-fa-instagram"></i>
+        <i class="social-icons fab-fa-twitter"></i>
+      </div>
+    </section>
+    <section class="attribution"><p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://tomhckr.github.io">TomHckr</a>.
+      </p>
+    </section>
   </footer>
 </body>
 </html>
