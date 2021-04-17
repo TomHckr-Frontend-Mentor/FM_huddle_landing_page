@@ -86,7 +86,8 @@ section.intro {
     font-size: 0.85rem;
 }
 
-.intro-btn {
+/* also used in the GET STARTED section */
+.get-started-btn {
     margin-top: 50px;
     border-radius: 30px;
     background: var(--pink);
@@ -100,6 +101,7 @@ section.intro {
 }
 
 .starting-graphics {
+    width: 90%;
     margin-top: 100px;
 }
 
@@ -211,8 +213,110 @@ section.about {
     background-image: url("images/bg-section-bottom-mobile-2.svg");
 }
 
-/* GET STARTED */
+/* GET STARTED section*/
 
 .get-started {
-    margin-top: 200px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.get-started .get-started-btn {
+    margin-top: 40px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 250px;
+    background-color: var(--dark-cyan);
+}
+
+.footer-section {
+    padding: 0 7%;
+    margin-top: 50px;
+}
+
+footer * {
+    color: #fff;
+    margin-top: 14px;
+}
+
+footer:before {
+    content: "";
+    background-image: url("images/bg-footer-top-mobile.svg");
+    width: 100vw;
+    height: 60px;
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+footer p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.newsletter-heading {
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.newsletter-form #email-field {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    height: 44px;
+    width: 100%;
+    color: #000;
+    padding: 10px;
+}
+
+.newsletter-form button {
+    background-color: var(--pink);
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    width: 150px;
+    float: right;
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.footer-section.general {
+    margin-top: 150px;
+}
+
+.general-logo {
+    height: 30px;
+}
+
+.contacts * {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts {
+    margin-top: 40px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.general-contacts-icon {
+    margin-right: 20px;
+}
+
+.social-icons {
+    font-size: 25px;
+    margin-right: 20px;
 }
