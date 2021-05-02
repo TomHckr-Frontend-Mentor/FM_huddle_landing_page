@@ -320,3 +320,19 @@ footer p {
     font-size: 25px;
     margin-right: 20px;
 }
+
+
+/* FOOTER */
+
+.attribution {
+    padding: 30px;
+}
+
+.attribution * {
+    font-size: 0.8rem;
+}
+
+.attribution a {
+    font-style: none;
+    color: white;
+}
