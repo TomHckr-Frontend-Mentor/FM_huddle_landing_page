@@ -34,7 +34,7 @@ p {
 /* HEAD-BAR */
 
 header {
-    --header-padding: 30px;
+    --header-padding: 4vw;
     height: 100px;
     display: flex;
     align-items: center;
@@ -335,4 +335,115 @@ footer p {
 .attribution a {
     font-style: none;
     color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 110%;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-logo {
+        height: 30px;
+    }
+
+
+    /* INTRO */
+
+    .intro-title {
+        font-size: 2.8rem;
+    }
+
+    .intro-dscr {
+        font-size: 1.2rem;
+        margin: 0 25vw;
+        margin-top: 10px;
+    }
+
+    .get-started-btn {
+        height: 70px;
+        width: 380px;
+        font-size: 1rem;
+    }
+
+
+    /* STATS */
+
+    section.stats {
+        flex-direction: row;
+        gap: 200px;
+        grid-gap: 200px;
+    }
+
+    .stat-icon {
+        height: 35px;
+    }
+
+    .stat-num {
+        font-size: 5rem;
+    }
+
+    .stat-dscr {
+        font-size: 1.2rem;
+    }
+
+
+    /* ABOUT */
+    
+    .about-node-inner {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10%;
+        grid-gap: 10%;
+    }
+
+    .about-node:nth-child(2) .about-node-inner {
+        flex-direction: row;
+    }
+
+    .about-text {
+        text-align: left;
+        max-width: 40%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-grow:before {
+        background-image: url("images/bg-section-top-desktop-1.svg");
+    }
+
+    .about-grow:after {
+        background-image: url("images/bg-section-bottom-desktop-1.svg");
+    }
+
+    .about-users:before {
+        background-image: url("images/bg-section-top-desktop-2.svg");
+    }
+
+    .about-users:after {
+        background-image: url("images/bg-section-bottom-desktop-2.svg");
+    }
+
+
+    /* GET STARTED */
+
+    .get-started-title {
+        font-size: 2rem;
+    }
+
+    .get-started .get-started-btn {
+    }
+
+
+    /* FOOTER */
+
+    footer:before {
+        background-image: url("images/bg-footer-top-desktop.svg");
+    }
+
 }
