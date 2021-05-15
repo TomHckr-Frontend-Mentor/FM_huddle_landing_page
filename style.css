@@ -370,7 +370,7 @@ footer p {
 
     .intro-dscr {
         font-size: 1.2rem;
-        margin: 0 25vw;
+        margin: 0 20vw;
         margin-top: 10px;
     }
 
@@ -418,6 +418,10 @@ footer p {
     .about-text {
         text-align: left;
         max-width: 40%;
+    }
+
+    .about-illustration {
+        max-width: 60%;
     }
 
     .about-title {
